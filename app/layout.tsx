@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/app/ui/Navbar";
+import HeaderGradient from "@/app/ui/HeaderGradient";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -20,8 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="font-montserrat">
-      <body className={montserrat.className}>
+    <html lang="en">
+      <body className={`${montserrat.className} relative isolate`}>
+        <HeaderGradient />
         <Navbar />
         {children}
       </body>
