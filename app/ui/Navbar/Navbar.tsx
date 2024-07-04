@@ -4,25 +4,27 @@ function Navbar() {
   return (
     <nav className="flex items-center justify-between px-40 pt-8">
       <div className="relative">
-        <span className="text-[2.25rem] font-semibold">
-          <span className="tracking-tight">{"//"}</span> repik
-        </span>
-        <div className="absolute -right-2.5 -top-1.5">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="rgb(156,163,175,0.8)"
-            className="size-5"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4.5v15m7.5-7.5h-15"
-            />
-          </svg>
-        </div>
+        <Link href="/">
+          <span className="text-[2.25rem] font-semibold">
+            <span className="tracking-tight">{"//"}</span> repik
+          </span>
+          <div className="absolute -right-2.5 -top-1.5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="rgb(156,163,175,0.8)"
+              className="size-5"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+          </div>
+        </Link>
       </div>
       <div>
         <ol className="flex items-center justify-center gap-4 text-xl font-medium">
@@ -32,7 +34,7 @@ function Navbar() {
             </li>
           </Link>
           <Link href="/enhance">
-            <li>Restore</li>
+            <li className="hover:text-slate-950/75">Restore</li>
           </Link>
         </ol>
       </div>

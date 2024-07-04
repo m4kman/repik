@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navbar from "@/app/ui/Navbar";
 import HeaderGradient from "@/app/ui/HeaderGradient";
+import Footer from "@/app/ui/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -22,10 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} relative isolate`}>
+      <body className={`${montserrat.className} relative text-slate-950`}>
         <HeaderGradient />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
