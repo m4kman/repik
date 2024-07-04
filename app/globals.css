@@ -6,7 +6,7 @@
   .hero-image-border {
     background-image: linear-gradient(
       to bottom,
-      rgba(14, 116, 144) 0%,
+      rgba(14, 116, 144, 0.7) 0%,
       rgba(14, 116, 144, 0.45) 25%,
       rgba(14, 116, 144, 0.35) 50%,
       rgba(14, 116, 144, 0) 100%

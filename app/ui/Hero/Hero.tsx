@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import heroPhoto from "@/public/assets/hero-photo.webp";
+import HeroImage from "@/app/ui/HeroImage";
 
 function Hero() {
   return (
@@ -19,14 +18,7 @@ function Hero() {
         </Link>
       </div>
       <div className="relative mt-48 flex items-center justify-center">
-        <div className="absolute h-[450px] w-[1000px] -translate-y-1/4 rounded-full bg-cyan-700/70 blur-3xl" />
-        <div className="hero-image-border isolate p-0.5">
-          <Image
-            src={heroPhoto}
-            alt="Picture Comparison of Before and After"
-            className="max-h-full max-w-full"
-          />
-        </div>
+        <HeroImage />
       </div>
     </section>
   );

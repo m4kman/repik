@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Dancing_Script } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/app/ui/Navbar";
@@ -9,6 +9,11 @@ import Footer from "@/app/ui/Footer";
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
+});
+
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  variable: "--font-dancing-script",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} relative text-slate-950`}>
+      <body
+        className={`${montserrat.variable} ${dancingScript.variable} relative font-montserrat text-slate-950`}
+      >
         <HeaderGradient />
         <Navbar />
         {children}
