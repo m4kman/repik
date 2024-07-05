@@ -1,6 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 function Navbar() {
+  const pathname = usePathname();
+
   return (
     <nav className="flex items-center justify-between px-40 pt-8">
       <div className="relative">
@@ -27,14 +33,54 @@ function Navbar() {
         </Link>
       </div>
       <div>
-        <ol className="flex items-center justify-center gap-4 text-xl font-medium">
+        <ol className="flex items-center justify-center gap-1 text-xl font-medium">
           <Link href="/">
-            <li className="rounded-full bg-black px-[18px] py-2 text-[#f1f5f9]">
-              Home
+            <li
+              className={
+                pathname === "/"
+                  ? "relative px-[18px] py-2 text-slate-100 transition"
+                  : "px-[18px] py-2 text-slate-950 hover:text-slate-950/75"
+              }
+            >
+              {pathname === "/" ? (
+                <motion.span
+                  layoutId="nav-bubble"
+                  transition={{
+                    duration: 0.6,
+                    type: "spring",
+                  }}
+                  className="absolute inset-0 rounded-full bg-black"
+                  style={{
+                    borderRadius: 9999,
+                  }}
+                />
+              ) : null}
+              <span className="relative z-10">Home</span>
             </li>
           </Link>
           <Link href="/enhance">
-            <li className="hover:text-slate-950/75">Restore</li>
+            <li
+              className={
+                pathname === "/enhance"
+                  ? "relative px-[18px] py-2 text-slate-100 transition"
+                  : "px-[18px] py-2 text-slate-950 hover:text-slate-950/75"
+              }
+            >
+              {pathname.includes("/enhance") ? (
+                <motion.span
+                  layoutId="nav-bubble"
+                  transition={{
+                    duration: 0.6,
+                    type: "spring",
+                  }}
+                  className="absolute inset-0 rounded-full bg-black"
+                  style={{
+                    borderRadius: 9999,
+                  }}
+                />
+              ) : null}
+              <span className="relative z-10">Restore</span>
+            </li>
           </Link>
         </ol>
       </div>

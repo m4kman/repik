@@ -13,7 +13,7 @@ function HeroImage() {
           className="max-h-full max-w-full"
         />
         <div className="absolute left-0 top-0 -translate-x-10 -translate-y-20">
-          <div className="mb-2 flex -translate-x-3 -rotate-[28.4deg]">
+          <div className="mb-2 flex -translate-x-4 translate-y-1 -rotate-[28.4deg]">
             <span className="font-handwriting text-2xl font-bold text-gray-400">
               Before
             </span>
@@ -21,7 +21,7 @@ function HeroImage() {
           <ArrowRight />
         </div>
         <div className="absolute right-0 top-0 -translate-y-20 translate-x-10">
-          <div className="mb-2 flex translate-x-2 rotate-[28.4deg] justify-end">
+          <div className="mb-2 flex translate-x-4 translate-y-1 rotate-[28.4deg] justify-end">
             <span className="font-handwriting text-2xl font-bold text-gray-400">
               After
             </span>

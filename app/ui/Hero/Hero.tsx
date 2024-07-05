@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className="mt-32">
       <div className="flex flex-col items-center justify-center gap-11">
-        <h1 className="max-w-[780px] bg-gradient-to-br from-slate-950 to-slate-500 bg-clip-text text-center text-[64px] font-bold text-transparent">
+        <h1 className="max-w-[780px] bg-gradient-to-br from-slate-950 to-slate-500 bg-clip-text text-center text-[64px] font-bold leading-tight text-transparent">
           Bring your old pictures to life using AI
         </h1>
         <p className="max-w-[450px] text-center text-lg font-medium text-slate-900/75">
