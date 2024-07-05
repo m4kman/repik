@@ -12,6 +12,9 @@ function Home() {
           <button className="flex items-center justify-center rounded-xl bg-black px-11 py-9 text-2xl font-semibold text-slate-100 hover:bg-black/90">
             upload a photo
           </button>
+          <span className="-translate-y-1 text-xs font-light italic text-slate-500">
+            Note: We do not store any photos, at all.
+          </span>
         </div>
       </div>
     </div>
