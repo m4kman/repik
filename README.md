@@ -4,7 +4,7 @@ An AI-based web app that uses the famous GFPGAN model to upscale and enhance old
 
 <p align="center">
   <img
-    src="https://github.com/m4kman/repik/blob/main/public/assets/repik.png?raw=true" alt="Repik Logo"
+    src="https://github.com/m4kman/repik/blob/main/public/assets/repik.png?raw=true" alt="Repik Logo" />
 </p>
 
 ## Tech Stack
