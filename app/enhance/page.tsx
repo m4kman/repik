@@ -24,7 +24,7 @@ function Home() {
           Note: We do not store any photos, at all.
         </span>
       </div>
-      <div className="mb-10 mt-32 flex flex-col gap-6">
+      <div className="mb-10 mt-20 flex flex-col gap-11">
         <ModelOutput
           originalPhoto={originalPhoto}
           restoredPhoto={restoredPhoto}
