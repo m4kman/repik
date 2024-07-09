@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight } from "@/app/ui/svgs";
 function HeroImage() {
   return (
     <>
-      <div className="absolute h-[450px] w-[1000px] -translate-y-1/4 rounded-full bg-cyan-700/70 blur-3xl" />
+      <div className="absolute inset-0 mx-auto h-[60%] max-h-[450px] w-3/4 max-w-[1000px] -translate-y-1/4 rounded-full bg-cyan-700/70 blur-3xl" />
       <div className="hero-image-border relative isolate p-0.5">
         <Image
           src={heroPhoto}

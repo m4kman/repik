@@ -24,10 +24,13 @@ function ModelOutput({
           Your output will be shown here!
         </span>
       ) : (
-        <div className="relative max-h-[1500px] min-h-[768px] min-w-[768px] max-w-[1500px] rounded-lg">
+        <div className="relative mx-auto max-h-[1500px] max-w-[90%] rounded-lg lg:min-w-[768px] lg:max-w-[1500px]">
           <ReactCompareSlider
             changePositionOnHover={true}
-            className="rounded-lg bg-gradient-to-r from-slate-900 to-slate-700"
+            className="max-h-full rounded-lg bg-gradient-to-r from-slate-900 to-slate-700"
+            style={{
+              filter: loaded === 2 ? "" : "blur(4px)",
+            }}
             itemOne={
               <ReactCompareSliderImage
                 style={imageStyle}

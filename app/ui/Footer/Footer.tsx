@@ -4,11 +4,11 @@ import Branding from "../Branding";
 
 function Footer() {
   return (
-    <footer className="relative mt-72 border-t border-gray-400">
-      <div className="absolute inset-x-0 flex -translate-y-3/4 justify-center">
+    <footer className="relative mt-52 border-t border-gray-400 lg:mt-72">
+      <div className="absolute inset-x-0 flex -translate-y-3/4 justify-center px-10">
         <Branding />
       </div>
-      <div className="isolate flex items-center justify-between py-10 md:px-28 lg:px-40">
+      <div className="isolate flex items-center justify-between px-10 py-10 lg:px-16 xl:px-20 2xl:px-40">
         <div>
           <span className="text-xs">
             Designed and developed by <span className="font-bold">m4kman.</span>

@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="mt-32 grid place-items-center">
       <div className="flex max-h-full flex-col items-center gap-11">
-        <h1 className="hero-text-gradient max-w-[765px] bg-clip-text text-center text-[64px] font-bold leading-tight text-transparent">
+        <h1 className="hero-text-gradient mx-10 max-w-[765px] bg-clip-text text-center text-[64px] font-bold leading-tight text-transparent">
           Rediscover the past in stunning detail
         </h1>
         <p className="text-xl font-medium text-slate-950/75">

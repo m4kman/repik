@@ -3,7 +3,7 @@ import HeroImage from "@/app/ui/HeroImage";
 
 function Hero() {
   return (
-    <section className="mt-32">
+    <section className="mx-20 mt-32">
       <div className="flex flex-col items-center justify-center gap-11">
         <h1 className="max-w-[780px] bg-gradient-to-br from-slate-950 to-slate-500 bg-clip-text text-center text-[64px] font-bold leading-tight text-transparent">
           Bring your old pictures to life using AI
@@ -17,7 +17,7 @@ function Hero() {
           </button>
         </Link>
       </div>
-      <div className="relative mt-48 flex items-center justify-center">
+      <div className="relative mx-auto mt-48 flex items-center justify-center">
         <HeroImage />
       </div>
     </section>

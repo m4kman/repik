@@ -8,7 +8,7 @@ function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex items-center justify-between px-40 pt-8">
+    <nav className="flex items-center justify-between px-10 pt-8 lg:px-16 xl:px-20 2xl:px-40">
       <div className="relative">
         <Link href="/">
           <span className="text-[2.25rem] font-semibold">
