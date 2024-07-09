@@ -1,7 +1,8 @@
-"use server";
+import { NextResponse } from "next/server";
 
-export async function upload(prevState: any, formData: FormData) {
-  const file = formData.get("file") as File;
+export async function POST(request: Request) {
+  const reqData = await request.formData();
+  const file = reqData.get("file") as File;
 
   const timestamp = Math.round(new Date().getTime() / 1000);
 
@@ -45,6 +46,7 @@ export async function upload(prevState: any, formData: FormData) {
   if (!response.ok) console.log(response);
   const data = await response.json();
   console.log(data.secure_url);
+  const uploadedImage = data.secure_url;
 
   const imgInput = {
     image: data.secure_url,
@@ -59,7 +61,10 @@ export async function upload(prevState: any, formData: FormData) {
   console.log("Action");
   console.log(modelData);
 
-  return {
-    outputImage: modelData.image,
+  const output = {
+    uploadedImage,
+    modelImage: modelData.outputImage.image,
   };
+
+  return NextResponse.json(output);
 }
