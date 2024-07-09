@@ -14,10 +14,10 @@ This project uses the following stack:
 - Tailwind CSS (Styling)
 - Framer Motion (Animations)
 
-[!NOTE]
-To work with this project, you should obviously have knowledge in the
-above stack, as well as working with REST APIs, some of the newer hooks and
-additions in React (useFormStatus, actions, etc.), and Next.js Route Handlers.
+> [!NOTE]
+> To work with this project, you should obviously have knowledge in the
+> above stack, as well as working with REST APIs, some of the newer hooks and
+> additions in React (useFormStatus, actions, etc.), and Next.js Route Handlers.
 
 ## Getting Started
 
