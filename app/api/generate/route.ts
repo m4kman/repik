@@ -45,7 +45,6 @@ export async function POST(request: Request) {
   );
   if (!response.ok) console.log(response);
   const data = await response.json();
-  console.log(data.secure_url);
   const uploadedImage = data.secure_url;
 
   const imgInput = {
@@ -58,8 +57,6 @@ export async function POST(request: Request) {
   });
 
   const modelData = await modelResponse.json();
-  console.log("Action");
-  console.log(modelData);
 
   const output = {
     uploadedImage,
